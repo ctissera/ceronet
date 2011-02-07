@@ -1,1 +1,0 @@
-Content:      "Ofertas":        dmSimpleBlogPost:        name:                   Blog Post        page:                   true        components:          list:          show:        dmSimpleBlogComment:        name:                   Blog Comment        components:          listByBlogPost:            filters:            [ dmSimpleBlogPost ]          form:  
