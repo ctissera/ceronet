@@ -103,7 +103,7 @@ abstract class BaseOfertasGeneratorConfiguration extends sfModelGeneratorConfigu
       'texto' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Descripcion',),
       'imagen' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Imagen',),
       'fechainicio' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Fecha Inicio',  'params' => 'date_format=\'dd/MM/yy\'',),
-      'fechafin' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Fecha Fin Oferta',  'params' => 'date_format=\'dd/MM/yy\'',),
+      'fechafin' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Fecha Fin',  'params' => 'date_format=\'dd/MM/yy\'',),
     );
   }
 
@@ -151,7 +151,7 @@ abstract class BaseOfertasGeneratorConfiguration extends sfModelGeneratorConfigu
       'texto' => array(  'type' => 'textarea_tag',  'params' => 'rich=true css=user.css tinymce_options=width:330',),
       'imagen' => array(  'type' => 'admin_input_file_tag',),
       'fechainicio' => array(  'params' => 'date_format=\'dd/MM/yy\'',),
-      'fechafin' => array(  'params' => 'date_format=\'dd/MM/yy\'',),
+      'fechafin' => array(  'params' =>   array(    'date_format' => 'dd/MM/yyyy',  ),),
     );
   }
 

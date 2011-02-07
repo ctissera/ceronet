@@ -19,7 +19,7 @@ generator:
         imagen:
           label:           Imagen
         fechainicio:       { label: Fecha Inicio,     params: date_format='dd/MM/yy' }
-        fechafin:          { label: Fecha Fin Oferta, params: date_format='dd/MM/yy'}
+        fechafin:          { label: Fecha Fin,        params: date_format='dd/MM/yy'}
 
       list:
         max_per_page:      2
@@ -32,7 +32,11 @@ generator:
 #          _create:         ~
 #		  { label: Crear Nueva Oferta }		  
       filter:
-        display:           [ titulo, texto , fechainicio, fechafin ]
+        display:           
+          - titulo
+          - texto
+          - fechainicio
+          - fechafin
         #params:            <stong>%%=titulo%%<stong>, %%fechainicio%%
 #        actions:
 #          _create:         { name: Crear Nueva Oferta } ~
@@ -43,11 +47,19 @@ generator:
       edit:
         title:             Edici&oacute;n de Oferta de %%Titulo%%
         fields:
-          fechainicio:     { params: date_format='dd/MM/yy' }
-          fechafin:        { params: date_format='dd/MM/yy' }
-          texto:           { type: textarea_tag, params: rich=true css=user.css tinymce_options=width:330 }
+          fechainicio:
+            params:
+              date_format='dd/MM/yy'
+          fechafin:
+            params:        { date_format: 'dd/MM/yyyy' }
+          texto:
+            type: textarea_tag
+            params:
+              rich=true css=user.css tinymce_options=width:330
           imagen:
-            type:          admin_input_file_tag
+            type:
+              admin_input_file_tag
+#admin_input_upload_tag
         actions:
           _delete:       { label: Eliminar Oferta }
           _list:         { label: Volver a la Lista }

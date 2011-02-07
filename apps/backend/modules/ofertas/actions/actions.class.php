@@ -13,4 +13,15 @@ require_once dirname(__FILE__).'/../lib/ofertasGeneratorHelper.class.php';
  */
 class ofertasActions extends autoOfertasActions
 {
+  public function executeIndex(sfWebRequest $request)
+  {
+	$this->getUser()->setCulture('es_AR'); 
+	parent::executeIndex($request);
+  }
+  
+  public function executeEdit(sfWebRequest $request)
+  {
+	$this->getUser()->setCulture('es_AR'); 
+	parent::executeEdit($request);
+  }  
 }
