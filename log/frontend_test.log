@@ -1,0 +1,189 @@
+Feb 07 10:09:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 07 10:09:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/index with parameters array (  'module' => 'category',  'action' => 'index',)
+Feb 07 10:09:44 symfony [info] {sfFrontWebController} Action "category/index" does not exist
+Feb 07 10:09:44 symfony [err] {sfError404Exception} Action "category/index" does not exist.
+Feb 07 10:09:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 07 10:09:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ofertas/index with parameters array (  'module' => 'ofertas',  'action' => 'index',)
+Feb 07 10:09:45 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Feb 07 10:09:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 10:09:45 symfony [info] {ofertasActions} Call "ofertasActions->executeIndex()"
+Feb 07 10:09:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:09:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:09:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM ofertas o - ()
+Feb 07 10:09:46 symfony [info] {sfPHPView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/indexSuccess.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_assets.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_flashes.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_header.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_th_tabular.php"
+Feb 07 10:09:46 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_pagination.php"
+Feb 07 10:09:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id AS o__id, o.titulo AS o__titulo, o.texto AS o__texto, o.imagen AS o__imagen, o.fechainicio AS o__fechainicio, o.fechafin AS o__fechafin FROM ofertas o LIMIT 2 - ()
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_batch_actions.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_actions.php"
+Feb 07 10:09:46 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_footer.php"
+Feb 07 10:09:46 symfony [info] {sfPHPView} Decorate content with "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:09:46 symfony [info] {sfPHPView} Render "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:09:46 symfony [info] {sfWebResponse} Send content (14572 o)
+Feb 07 10:15:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 07 10:15:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ofertas/index with parameters array (  'module' => 'ofertas',  'action' => 'index',)
+Feb 07 10:15:43 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Feb 07 10:15:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 10:15:43 symfony [info] {ofertasActions} Call "ofertasActions->executeIndex()"
+Feb 07 10:15:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:15:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:15:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM ofertas o - ()
+Feb 07 10:15:44 symfony [info] {sfPHPView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/indexSuccess.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_assets.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_flashes.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_header.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_th_tabular.php"
+Feb 07 10:15:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_pagination.php"
+Feb 07 10:15:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id AS o__id, o.titulo AS o__titulo, o.texto AS o__texto, o.imagen AS o__imagen, o.fechainicio AS o__fechainicio, o.fechafin AS o__fechafin FROM ofertas o LIMIT 2 - ()
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_batch_actions.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_actions.php"
+Feb 07 10:15:44 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_footer.php"
+Feb 07 10:15:44 symfony [info] {sfPHPView} Decorate content with "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:15:44 symfony [info] {sfPHPView} Render "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:15:44 symfony [info] {sfWebResponse} Send content (14572 o)
+Feb 07 10:37:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 07 10:37:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ofertas/index with parameters array (  'module' => 'ofertas',  'action' => 'index',)
+Feb 07 10:37:29 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Feb 07 10:37:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 10:37:29 symfony [info] {ofertasActions} Call "ofertasActions->executeIndex()"
+Feb 07 10:37:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:37:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:37:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM ofertas o - ()
+Feb 07 10:37:30 symfony [info] {sfPHPView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/indexSuccess.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_assets.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_flashes.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_header.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_th_tabular.php"
+Feb 07 10:37:30 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_pagination.php"
+Feb 07 10:37:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id AS o__id, o.titulo AS o__titulo, o.texto AS o__texto, o.imagen AS o__imagen, o.fechainicio AS o__fechainicio, o.fechafin AS o__fechafin FROM ofertas o LIMIT 2 - ()
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_batch_actions.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_actions.php"
+Feb 07 10:37:30 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_footer.php"
+Feb 07 10:37:30 symfony [info] {sfPHPView} Decorate content with "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:37:30 symfony [info] {sfPHPView} Render "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:37:30 symfony [info] {sfWebResponse} Send content (14572 o)
+Feb 07 10:37:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 07 10:37:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ofertas/index with parameters array (  'module' => 'ofertas',  'action' => 'index',)
+Feb 07 10:37:56 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Feb 07 10:37:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 10:37:56 symfony [info] {ofertasActions} Call "ofertasActions->executeIndex()"
+Feb 07 10:37:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:37:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:37:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM ofertas o - ()
+Feb 07 10:37:56 symfony [info] {sfPHPView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/indexSuccess.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_assets.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_flashes.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_header.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_th_tabular.php"
+Feb 07 10:37:56 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_pagination.php"
+Feb 07 10:37:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id AS o__id, o.titulo AS o__titulo, o.texto AS o__texto, o.imagen AS o__imagen, o.fechainicio AS o__fechainicio, o.fechafin AS o__fechafin FROM ofertas o LIMIT 2 - ()
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_batch_actions.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_actions.php"
+Feb 07 10:37:56 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_footer.php"
+Feb 07 10:37:56 symfony [info] {sfPHPView} Decorate content with "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:37:56 symfony [info] {sfPHPView} Render "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:37:56 symfony [info] {sfWebResponse} Send content (14572 o)
+Feb 07 10:39:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 07 10:39:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ofertas/index with parameters array (  'module' => 'ofertas',  'action' => 'index',)
+Feb 07 10:39:50 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Feb 07 10:39:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 10:39:50 symfony [info] {ofertasActions} Call "ofertasActions->executeIndex()"
+Feb 07 10:39:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:39:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 07 10:39:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM ofertas o - ()
+Feb 07 10:39:51 symfony [info] {sfPHPView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/indexSuccess.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_assets.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_flashes.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_header.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_filters_field.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_th_tabular.php"
+Feb 07 10:39:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_pagination.php"
+Feb 07 10:39:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id AS o__id, o.titulo AS o__titulo, o.texto AS o__texto, o.imagen AS o__imagen, o.fechainicio AS o__fechainicio, o.fechafin AS o__fechafin FROM ofertas o LIMIT 2 - ()
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_td_tabular.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_batch_actions.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_actions.php"
+Feb 07 10:39:51 symfony [info] {sfPartialView} Render "C:\dev\sfproject\cache\frontend\test\modules/autoOfertas/templates/_list_footer.php"
+Feb 07 10:39:51 symfony [info] {sfPHPView} Decorate content with "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:39:51 symfony [info] {sfPHPView} Render "C:\dev\sfproject\apps\frontend\templates/layout.php"
+Feb 07 10:39:51 symfony [info] {sfWebResponse} Send content (14572 o)

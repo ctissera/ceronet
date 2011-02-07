@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ofertas
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ofertas
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      fields:
+        id:                { label: Id }
+        titulo:            { label: Titulo Oferta}
+        texto:             { label: Descripcion}
+        imagen:            { label: Imagen }
+        fechainicio:       { label: Fecha Inicio }
+        fechafin:          { label: Fecha Fin Oferta }	
+
+      list:
+        actions: {}
+        batch_actions: {}
+        object_actions:    {}
+        max_per_page:      2
+        title:             Listado de Ofertas
+        display:           [ =titulo, fechainicio, fechafin , imagen]
+        fields:
+          fechainicio:     { params: date_format='dd/MM/yy' }
+          fechafin:        { params: date_format='dd/MM/yy' }
+      filter:
+        display:           [ titulo, texto , fechainicio, fechafin ]
+      edit:
+        title:             Detalles de Oferta de %%Titulo%%
+        fields:
+          fechainicio:     { params: date_format='dd/MM/yy' }
+          fechafin:        { params: date_format='dd/MM/yy' }
+          texto:           { type: textarea_tag, params: rich=true css=user.css tinymce_options=width:330 }
+          imagen:
+            label:           Imagen
+            help:            Ingrese una imagen JPG o PNG ()
+            type:            input_file_tag
+            params:          include_link=imagenes include_remove=true
+        actions: {}
+      form:
+        actions:
+          _list:           { label: Volver a la Lista }
