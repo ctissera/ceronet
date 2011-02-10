@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2011-02-09T09:15:20Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Listado de Ofertas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Edici&amp;oacute;n de Oferta de %%Titulo%%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Crear Nueva Oferta.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Id</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Titulo Oferta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Descripcion</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Imagen</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Fecha Inicio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Fecha Fin</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Inicio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Fin</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Ingrese una imagen JPG o PNG</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Please upload a file</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Only PNG and JPEG images are allowed</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Max size is 512Kb</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>from</source>
+        <target>desde</target>
+      </trans-unit>	  
+    </body>
+  </file>
+</xliff>

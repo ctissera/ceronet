@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2011-02-09T09:10:40Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Listado de Ofertas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Detalles de Oferta de %%Titulo%%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Id</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Titulo Oferta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Descripcion</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Imagen</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Fecha Inicio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Fecha Fin Oferta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Ingrese una imagen JPG o PNG ()</source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
