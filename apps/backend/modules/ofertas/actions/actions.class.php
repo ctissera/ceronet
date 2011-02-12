@@ -18,10 +18,15 @@ class ofertasActions extends autoOfertasActions
 	$this->getUser()->setCulture('es_AR'); 
 	parent::executeIndex($request);
   }
-  
-  public function executeEdit(sfWebRequest $request)
+
+  public function executeUpdate(sfWebRequest $request)
   {
-	$this->getUser()->setCulture('es_AR'); 
-	parent::executeEdit($request);
-  }  
+    $this->ofertas = $this->getRoute()->getObject();
+	
+    $this->form = $this->configuration->getForm($this->ofertas);
+
+    $this->processForm($request, $this->form);
+
+    $this->setTemplate('edit');
+  } 
 }

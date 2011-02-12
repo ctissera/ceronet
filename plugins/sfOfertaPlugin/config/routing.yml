@@ -1,0 +1,8 @@
+sf_demo_back:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfOferta
+    module:               sfOferta
+    prefix_path:          /sfoferta
+    column:               id
+    with_wildcard_routes: true

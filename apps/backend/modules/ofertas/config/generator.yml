@@ -18,15 +18,16 @@ generator:
         texto:             { label: Descripcion}
         imagen:            { label: Imagen }
         fechainicio:       { label: Fecha Inicio, date_format:dd/MM/yyyy }
-        fechafin:          { label: Fecha Fin }
+        fechafin:          { label: Fecha Fin,    date_format:dd/MM/yyyy }
 
       list:
         max_per_page:      2
         title:             Listado de Ofertas
-        display:           [ =titulo, fechainicio, fechafin , imagen]
+        display:           [ =titulo, fechainicio, fechafin , _imagen]
         fields:
           fechainicio:     { label: Inicio, date_format:dd/MM/yyyy }
           fechafin:        { label: Fin,    date_format:dd/MM/yyyy }
+          #imagen:          <?php> <img> '/uploads/imagenes/'.imagen </img> ?>
         actions:
           _new:            { label: Crear Nueva Oferta }
         object_actions:
@@ -50,8 +51,6 @@ generator:
       edit:
         title:             Edici&oacute;n de Oferta de %%Titulo%%
         fields:
-          fechainicio:     { date_format:dd/MM/yyyy }
-          fechafin:        { date_format:dd/MM/yyyy }
           texto:
 #            type: textarea_tag
 #            params:
@@ -69,8 +68,6 @@ generator:
       new:
         title:             Crear Nueva Oferta.
         fields:
- #         fechainicio:     { date_format:dd/MM/yyyy }
-#          fechafin:        { date_format:dd/MM/yyyy }
           imagen:
             label:         Imagen
             help:          Ingrese una imagen JPG o PNG

@@ -1,0 +1,85 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ofertas
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ofertas
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      fields:
+        id:                { label: Id }
+        titulo:            { label: Titulo Oferta}
+        texto:             { label: Descripcion}
+        imagen:            { label: Imagen }
+        fechainicio:       { label: Fecha Inicio, date_format:dd/MM/yyyy }
+        fechafin:          { label: Fecha Fin }
+
+      list:
+        max_per_page:      2
+        title:             Listado de Ofertas
+        display:           [ =titulo, fechainicio, fechafin , imagen]
+        fields:
+          fechainicio:     { label: Inicio, date_format:dd/MM/yyyy }
+          fechafin:        { label: Fin,    date_format:dd/MM/yyyy }
+        actions:
+          _new:            { label: Crear Nueva Oferta }
+        object_actions:
+          _edit:           { label: Editar }
+          _delete:         { label: Eliminar, params: confirm=Esta seguro ? }
+        batch_actions:
+          _delete:         { label: Eliminar Ofertas Seleccionadas, params: confirm=Esta seguro ?}
+
+      filter:
+        display:           
+          - titulo
+          - texto
+          - fechainicio
+          - fechafin
+        #params:            <stong>%%=titulo%%<stong>, %%fechainicio%%
+
+      form:
+        class:             OfertasForm
+        actions:
+          _create:         { label: Crear Nueva Oferta }
+      edit:
+        title:             Edici&oacute;n de Oferta de %%Titulo%%
+        fields:
+          fechainicio:     { date_format:dd/MM/yyyy }
+          fechafin:        { date_format:dd/MM/yyyy }
+          texto:
+#            type: textarea_tag
+#            params:
+#              rich=true css=user.css tinymce_options=width:330
+          imagen:
+#            type:          admin_input_file_tag
+#            type:          admin_input_upload_tag
+#            params:        include_link=imagenes, include_remove=true			
+#            help:          Ingrese una Imagen JPG o PNG
+        actions:
+          _delete:         { label: Eliminar Oferta, params: confirm= Esta seguro ? }
+          _list:           { label: Volver a la Lista }
+          _save:           { label: Guardar Oferta }
+
+      new:
+        title:             Crear Nueva Oferta.
+        fields:
+ #         fechainicio:     { date_format:dd/MM/yyyy }
+#          fechafin:        { date_format:dd/MM/yyyy }
+          imagen:
+            label:         Imagen
+            help:          Ingrese una imagen JPG o PNG
+#            type:          admin_input_file_tag
+            type:          admin_input_upload_tag			
+            params:        include_link=imagenes, include_remove=true
+            upload_dir:    imagenes
+        actions:
+          _list:           { label: Volver a la Lista }
+          _save:           { label: Guardar Oferta }
+          _save_and_add:   { label: Guardar Oferta y Agregar Otra }
+ 

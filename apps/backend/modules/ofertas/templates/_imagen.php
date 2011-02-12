@@ -1,0 +1,1 @@
+<?php	if($ofertas->getImagen()) {		echo image_tag('/uploads/imagenes/'. $ofertas->getImagen(),'width=40');	} else {		echo 'SIN IMAGEN';	}?>
