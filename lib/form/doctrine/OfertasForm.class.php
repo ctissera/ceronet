@@ -14,13 +14,13 @@ class OfertasForm extends BaseOfertasForm {
 		parent::configure();
 
 		$this->widgetSchema['imagen'] = new sfWidgetFormInputFileEditable(array(
-		  'label'     => 'Imagen Oferta',
-		  'file_src'  => '/uploads/imagenes/'.$this->getObject()->getImagen(),
-		  'is_image'  => true,
-		  'edit_mode' => !$this->isNew(),
-		  'with_delete' => true,
+		  'label'        => 'Imagen Oferta',
+		  'file_src'     => '/uploads/imagenes/'.$this->getObject()->getImagen(),
+		  'is_image'     => true,
+		  'edit_mode'    => !$this->isNew(),
+		  'with_delete'  => true,
 		  'delete_label' => 'Eliminar Imagen',
-		  'template'  => '<div>%file%<br />%input%<br />%delete% %delete_label%</div>',
+		  'template'     => '<div>%file%<br />%input%<br />%delete% %delete_label%</div>',
 		));
 
 		$this->validatorSchema['imagen'] = new sfValidatorFile(array(
@@ -37,8 +37,6 @@ class OfertasForm extends BaseOfertasForm {
 		//'path' => sfConfig::get('sf_upload_dir'.'/imagenes/'),
 		//'required' => false));
 		
-		//$this->validatorSchema['imagen'] = new sfValidatorBoolean();
-
 		$this->setWidget('fechainicio', new sfWidgetFormI18nDate(array(
 		  'culture'      => 'es_AR',
 		  'month_format' => 'number',   // Use any of 'name' (default), 'short_name', and 'number' 
@@ -57,18 +55,6 @@ class OfertasForm extends BaseOfertasForm {
 	}
 
 	public function doSave($con = null)	{
-		$values = $this->getValue("imagen");
-		foreach ($values as $index=>$value) { 
-			if($index == 'name') {
-
-			}
-		}
-		//die();
-		if ($this->getValue('imagen') || $this->getValue('imagen_delete')) {
-			$p = '/uploads/imagenes/Belkis2.png';
-			if (file_exists($p))
-			  unlink($p);
-		}
 		return parent::doSave($con);
 	}
 }

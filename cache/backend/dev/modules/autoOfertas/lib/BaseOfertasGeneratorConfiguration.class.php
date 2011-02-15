@@ -116,6 +116,7 @@ abstract class BaseOfertasGeneratorConfiguration extends sfModelGeneratorConfigu
       'imagen' => array(),
       'fechainicio' => array(  'label' => 'Inicio',  'date_format' => 'dd/MM/yyyy',),
       'fechafin' => array(  'label' => 'Fin',  'date_format' => 'dd/MM/yyyy',),
+      '_link_to_image' => array(  'label' => 'Imagen',),
     );
   }
 
@@ -149,7 +150,7 @@ abstract class BaseOfertasGeneratorConfiguration extends sfModelGeneratorConfigu
       'id' => array(),
       'titulo' => array(),
       'texto' => array(),
-      'imagen' => array(),
+      'imagen' => array(  'params' => 'include_link=imagenes, include_remove=true',),
       'fechainicio' => array(),
       'fechafin' => array(),
     );
@@ -200,7 +201,7 @@ abstract class BaseOfertasGeneratorConfiguration extends sfModelGeneratorConfigu
 
   public function getPagerMaxPerPage()
   {
-    return 2;
+    return 10;
   }
 
   public function getDefaultSort()
